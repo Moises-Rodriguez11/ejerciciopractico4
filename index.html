@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Libros</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="w3-bar w3-dark-grey">
+            <a href="#" class="w3-bar-item w3-button">Inicio</a>
+            <a href="#" class="w3-bar-item w3-button">Sobre Nosotros</a>
+            <a href="#" class="w3-bar-item w3-button">Contactar</a>
+        </nav>
+    </header>
+
+    <main class="w3-container">
+        <div class="w3-container w3-red">
+            <h2>Galería de Libros</h2>
+        </div>
+        
+        <div class="w3-row-padding w3-section gallery">
+            <div class="w3-col s3">
+                <img src="img/DiseñoGrafico.png" alt="Libro 1" onclick="openModal(this.src)">
+            </div>
+            <div class="w3-col s3">
+                <img src="img/DiseñoWeb.png" alt="Libro 2" onclick="openModal(this.src)">
+            </div>
+            <div class="w3-col s3">
+                <img src="img/Redes.jpg" alt="Libro 3" onclick="openModal(this.src)">
+            </div>
+            <div class="w3-col s3">
+                <img src="img/Mantenimiento.png" alt="Libro 4" onclick="openModal(this.src)">
+            </div>
+        </div>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modal-image" style="width:100%">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="w3-container w3-dark-grey w3-padding-16">
+            <p class="w3-center">Pie de Página</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
